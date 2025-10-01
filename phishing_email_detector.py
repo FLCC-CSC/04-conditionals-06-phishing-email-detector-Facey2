@@ -1,8 +1,8 @@
 # FILE NAME - phishing_email_detector.py
 
-# NAME: 
-# DATE: 
-# BRIEF DESCRIPTION:  
+# NAME: sheri facey
+# DATE: 10/01/25
+# BRIEF DESCRIPTION:  phishing email
 
 
 
@@ -17,6 +17,23 @@
 
 
 
+
+subject_line = input('Enter the email subject line: ')
+print('\nSECURITY ASSESSMENT:')
+if 'urgent' in subject_line:
+    print('HIGH RISK: Possible phishing attempt.')
+elif 'immediate' in subject_line:
+    print('HIGH RISK: Possible phishing attempt.')
+elif 'win' in subject_line:
+    print('MEDIUM RISK: Suspicious offer detected.')
+elif 'prize' in subject_line:
+    print('MEDIUM RISK: Suspicious offer detected.')
+elif 'password reset' in subject_line:
+    print('LOW RISK: Verify legitimacy with sender.')
+else:
+    print('No phishing indicators detected.')
+print('------------------------')
+print(f'Analyzed subject: "{subject_line}"')
 
 
 
@@ -77,7 +94,7 @@ Analyzed subject: "Did you request a password reset?"
 '''
 
 1. Was using `in` difficult or was it natural?
-
+This was a little more difficult a little tedious
 
 
 
@@ -97,7 +114,7 @@ Analyzed subject: "Did you request a password reset?"
 Please gauge your utilization of AI on the following spectrum. Place an "X" in front
 of the appropriate response. Only choose one of the following:
 
-[ ] I did not use AI at all for this lab.
+[x ] I did not use AI at all for this lab.
 [ ] I wrote the initial draft of the software but had AI help me make it better.
 [ ] I fed the lab description to AI and had it generate a response but I modified it.
 [ ] AI created the entire program for me.
@@ -111,7 +128,7 @@ may impede your understanding. Please rate how well you understand the concepts 
 
 [ ] I understand very little about this lab.
 [ ] I am about 50/50 on this lab; I get parts of it but not the whole picture.
-[ ] I pretty much get it.
+[x ] I pretty much get it.
 [ ] I'm solid. Totally got it.
 
 '''
