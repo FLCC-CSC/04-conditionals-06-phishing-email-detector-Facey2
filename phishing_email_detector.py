@@ -1,8 +1,8 @@
 # FILE NAME - phishing_email_detector.py
 
-# NAME: 
-# DATE: 
-# BRIEF DESCRIPTION:  
+# NAME: sheri facey
+# DATE: 10/01/25
+# BRIEF DESCRIPTION:  phishing email
 
 
 
@@ -17,6 +17,19 @@
 
 
 
+
+subject_line = input('Enter the email subject line: ')
+print('\nSECURITY ASSESSMENT:')
+if 'URGENT' in subject_line:
+    print('HIGH RISK: Possible phishing attempt.')
+elif 'win' in subject_line:
+    print('MEDIUM RISK: Suspicious offer detected.')
+elif 'password reset' in subject_line:
+    print('LOW RISK: Verify legitimacy with sender.')
+else:
+    print('No phishing indicators detected.')
+print('------------------------')
+print(f'Analyzed subject: "{subject_line}"')
 
 
 
@@ -77,7 +90,7 @@ Analyzed subject: "Did you request a password reset?"
 '''
 
 1. Was using `in` difficult or was it natural?
-
+This was a little more difficult a little tedious
 
 
 
